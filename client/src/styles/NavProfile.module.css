@@ -1,0 +1,65 @@
+.profile {
+    position: fixed !important;
+    height: 60px;
+    width: 78px;
+    left: 0;
+    bottom: -8px;
+    padding: 10px 14px;
+    background: #1d1b31;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.sideBarOpen.profile {
+    width: 250px;
+    opacity: 1;
+}
+
+.profileDetails {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    opacity: 0;
+}
+
+.sideBarOpen .profileDetails {
+    opacity: 1;
+}
+
+.name,
+.job {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.job {
+    font-size: 12px;
+}
+
+.log_out {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #1d1b31;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+}
+
+.sideBarOpen .log_out {
+    width: 50px;
+    background: none;
+}
+
+.profileImg {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+}

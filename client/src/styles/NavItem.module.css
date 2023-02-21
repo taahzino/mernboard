@@ -1,0 +1,20 @@
+.links_name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.links_name.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.button:hover .links_name,
+.button:hover i {
+    transition: all 0.5s ease;
+    color: #11101D;
+}
